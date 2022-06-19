@@ -1,0 +1,147 @@
+[39]HELLO! BOOT0 is starting!
+[42]BOOT0 commit : fbe7448cdb
+[45]set pll start
+[47]periph0 has been enabled
+[50]set pll end
+[52]PMU: AXP21
+[55]board init ok
+[57]DRAM use external ZQ!!
+[59]chip id check OK
+[62]DRAM_VCC set to 1500 mv
+[64]trefi:7.8ms
+[67][AUTO DEBUG] single rank and full DQ!
+[71]trefi:7.8ms
+[73][AUTO DEBUG] rank 0 row = 15 
+[77][AUTO DEBUG] rank 0 bank = 8 
+[80][AUTO DEBUG] rank 0 page size = 2 KB 
+[84]DRAM BOOT DRIVE INFO: V0.16
+[87]DRAM CLK = 936 MHz
+[89]DRAM Type = 3 (2:DDR2,3:DDR3)
+[92]DRAMC ZQ value: 0x7b7bfb
+[95]DRAM ODT value: 0x42.
+[98]DRAM SIZE =512 M
+[100]dram_tpr4:0x0
+[108]DRAM simple test OK.
+[110]rtc standby flag is 0x0, super standby flag is 0x0
+[115]dram size =512
+[118]audio:avcc calibration
+[120]card no is 0
+[122]sdcard 0 line count 4
+[125][mmc]: mmc driver ver 2021-12-27 10:07
+[134][mmc]: Wrong media type 0x0
+[137][mmc]: ***Try SD card 0***
+[146][mmc]: HSSDR52/SDR25 4 bit
+[148][mmc]: 50000000 Hz
+[151][mmc]: 3861 MB
+[153][mmc]: ***SD/MMC 0 init OK!!!***
+[280]Loading boot-pkg Succeed(index=0).
+[284]Entry_name        = optee
+[287]Entry_name        = u-boot
+[293]Entry_name        = dtb
+[297]mmc not para
+[298]Jump to second Boot.
+M/TC: OP-TEE version: 15ee1539b (gcc version 5.3.1 20160412 (Linaro GCC 5.3-2016.05)) #1 Tue Mar 29 06:48:41 UTC 2022 arm
+
+
+U-Boot 2018.05-00006-gb5e4c9f6fb (Jun 09 2022 - 06:47:31 +0000) Allwinner Technology
+
+[00.470]CPU:   Allwinner Family
+[00.473]Model: sun8iw21
+I2C:   ready
+[00.498]DRAM:  512 MiB
+[00.502]Relocation Offset is: 1ced0000
+[00.526]secure enable bit: 0
+E/TC:0   fdt_getprop_u32:343 prop trace_level not found
+[00.541]PMU: AXP21
+[00.543]BMU: AXP21
+FDT ERROR:fdt_get_regulator_name:get property handle twi-supply error:FDT_ERR_INTERNAL
+bias_name:pc_bias	 bias_vol:1800
+bias_name:pi_bias	 bias_vol:1800
+[00.567]CPU=900 MHz,PLL6=600 Mhz,AHB=200 Mhz, APB1=24Mhz  MBus=300Mhz
+[00.573]gic: sec monitor mode
+sunxi flash map init
+[00.578]flash init start
+[00.581]workmode = 0,storage type = 1
+[00.584][mmc]: mmc driver ver uboot2018:2021-12-20 13:35:00
+[00.589][mmc]: get sdc_type fail and use default host:tm1.
+[00.596][mmc]: can't find node "mmc0",will add new node
+[00.601][mmc]: fdt err returned <no error>
+[00.604][mmc]: Using default timing para
+[00.608][mmc]: SUNXI SDMMC Controller Version:0x50400
+[00.626][mmc]: card_caps:0x3000000a
+[00.629][mmc]: host_caps:0x3000003f
+[00.632]sunxi flash init ok
+[00.634]line:724 init_clocks
+[00.638]drv_disp_init
+request pwm success, pwm9:pwm9:0x2000c00.
+[00.652]drv_disp_init finish
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid Backup GPT ***
+[00.679]Loading Environment from SUNXI_FLASH... GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid Backup GPT ***
+*** Warning - no device, using default environment
+
+Failed (-19)
+[00.725]boot_gui_init:start
+[00.728]set disp.dev2_output_type fail. using defval=0
+[00.732][ICN6202 TO LVDS] LINE:0146-->lcd_open_flow:
+[00.737][ICN6202 TO LVDS] LINE:0146-->lcd_open_flow:
+[00.742][ICN6202 TO LVDS] LINE:0167-->lcd_power_on:
+[00.760]boot_gui_init:finish
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GP[00.773][ICN6202 TO LVDS] LINE:0146-->lcd_open_flow:
+[00.777][ICN6202 TO LVDS] LINE:0575-->lcd_panel_init:
+[00.943][ICN6202 TO LVDS] LINE:0620-->lcd_panel_init:initialization:icn6202 init reg from mipi
+T ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid Backup GPT ***
+partno erro : can't find partition bootloader
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid Backup GPT ***
+partno erro : can't find partition boot-resource
+
+[00.998]Get bootloader and boot-resource partition number fail!
+[01.017]Item0 (Map) magic is bad
+[01.019]the secure storage item0 copy0 magic is bad
+[01.037]Item0 (Map) magic is bad
+[01.040]the secure storage item0 copy1 magic is bad
+[01.044]Item0 (Map) magic is bad
+[01.047]out of usb burn from boot: not need burn key
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part[01.072][ICN6202 TO LVDS] LINE:0146-->lcd_open_flow:
+_get_info_efi: *** ERROR: Invalid Backup GPT ***
+[01.081[01.081][ICN6202 TO LVDS] LINE:0146-->lcd_open_flow:
+[01.086][ICN6202 TO LVDS] LINE:0203-->lcd_bl_open:
+[01.092][ICN6202 TO LVDS] LINE:0146-->lcd_open_flow:
+[01.096][ICN6202 TO LVDS] LINE:0146-->lcd_open_flow:
+[01.101]LCD open finish
+]update part info
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid Backup GPT ***
+[01.130]update bootcmd
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid Backup GPT ***
+GUID Partition Table Header signature is wrong: 0x0 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid GPT ***
+GUID Partition Table Header signature is wrong: 0x5555555555555555 != 0x5452415020494645
+part_get_info_efi: *** ERROR: Invalid Backup GPT ***
+[01.181]change working_fdt 0x5de8fe70 to 0x5de6fe70
+disable nand error: FDT_ERR_BADPATH
+[01.195]The storage not support sample function
+[01.202]## error: update_fdt_dram_para : FDT_ERR_NOTFOUND
+[01.211]update dts
+Hit any key to stop autoboot:  2 ... 1 ... 0 
+## Error: "distro_bootcmd" not defined
+=> 
