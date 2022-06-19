@@ -1,0 +1,117 @@
+[26182]fes begin commit:fbe7448cdb
+[26185]set pll start
+[26187]periph0 has been enabled
+[26190]set pll end
+[26193]PMU: AXP21
+[26196]board init ok
+[26198]beign to init dram
+[26200]DRAM use external ZQ!!
+[26203]chip id check OK
+[26206]DRAM_VCC set to 1500 mv
+[26209]trefi:7.8ms
+[26211][AUTO DEBUG] single rank and full DQ!
+[26216]trefi:7.8ms
+[26218][AUTO DEBUG] rank 0 row = 15 
+[26222][AUTO DEBUG] rank 0 bank = 8 
+[26225][AUTO DEBUG] rank 0 page size = 2 KB 
+[26229]DRAM BOOT DRIVE INFO: V0.16
+[26232]DRAM CLK = 936 MHz
+[26235]DRAM Type = 3 (2:DDR2,3:DDR3)
+[26238]DRAMC ZQ value: 0x7b7bfb
+[26241]DRAM ODT value: 0x42.
+[26245]DRAM SIZE =512 M
+[26247]dram_tpr4:0x0
+[26250]DRAM simple test OK.
+[26253]rtc standby flag is 0x0, super standby flag is 0x0
+[26258]init dram ok
+
+
+
+U-Boot 2018.05-00006-gb5e4c9f6fb (Jun 09 2022 - 06:47:31 +0000) Allwinner Technology
+
+[27.808]CPU:   Allwinner Family
+[27.811]Model: sun8iw21
+I2C:   ready
+[27.837]DRAM:  512 MiB
+[27.840]Relocation Offset is: 1ced0000
+[27.865]secure enable bit: 0
+[27.867]PMU: AXP21
+[27.869]PMU: pmu_axp2101 found
+[27.872]BMU: AXP21
+[27.874]BMU: bmu_axp2101 found
+FDT ERROR:fdt_get_regulator_name:get property handle twi-supply error:FDT_ERR_INTERNAL
+[27.884]gpio_bias, pc_bias: 1800, pc_supply: not set  
+[27.889]gpio_bias, pl_bias:   -1, pl_supply: not set  
+[27.895]dcdc1_vol = 3300, onoff=1
+[27.898]dcdc2_vol = 900, onoff=1
+[27.901]dcdc5_vol = 0, onoff=0
+[27.905]aldo1_vol = 1800, onoff=1
+[27.908]aldo2_vol = 1800, onoff=1
+[27.912]aldo3_vol = 3300, onoff=1
+[27.915]aldo4_vol = 3300, onoff=1
+[27.919]bldo1_vol = 1800, onoff=1
+[27.922]bldo2_vol = 2800, onoff=1
+[27.926]dldo1_vol = 3300, onoff=1
+[27.929]dldo2_vol = 1200, onoff=1
+bias_name:pc_bias	 bias_vol:1800
+bias_name:pi_bias	 bias_vol:1800
+[27.939]bat_vol=4577, ratio=1
+[27.942]safe_vol=3500, safe_ratio=1
+[27.946]CPU=900 MHz,PLL6=600 Mhz,AHB=200 Mhz, APB1=24Mhz  MBus=300Mhz
+[27.952]gic: normal mode
+sunxi flash map init
+[27.957]flash init start
+[27.959]workmode = 16,storage type = 0
+try card 2
+set card number 2
+get card number 2
+[27.967][mmc]: mmc driver ver uboot2018:2021-12-20 13:35:00
+[27.972][mmc]: get sdc_type fail and use default host:tm4.
+[27.979][mmc]: Is not Boot mode!
+[27.982][mmc]: SUNXI SDMMC Controller Version:0x50400
+[27.993][mmc]: ************Try SD card 2************
+[27.998][mmc]: mmc 2 cmd timeout 100 status 100
+[28.002][mmc]: smc 2 err, cmd 8,  RTO
+[28.006][mmc]: mmc 2 close bus gating and reset
+[28.011][mmc]: mmc 2 cmd timeout 100 status 100
+[28.015][mmc]: smc 2 err, cmd 55,  RTO
+[28.018][mmc]: mmc 2 close bus gating and reset
+[28.023][mmc]: ************Try MMC card 2************
+
+[28.079][mmc]: mmc 2 cmd timeout 100 status 100
+[28.083][mmc]: smc 2 err, cmd 8,  RTO
+[28.086][mmc]: mmc 2 close bus gating and reset
+[28.091][mmc]: mmc 2 cmd timeout 100 status 100
+[28.095][mmc]: smc 2 err, cmd 55,  RTO
+[28.099][mmc]: mmc 2 close bus gating and reset
+[28.115][mmc]: gen_tuning_blk_bus8: total blk 10
+[28.119][mmc]: gen_tuning_blk_bus4: total blk 6
+[28.124][mmc]: Using 8 bit tuning now
+[28.127][mmc]: send stop
+[28.129][mmc]:  Write tuning pattern failded
+[28.133][mmc]: Using 8 bit tuning now
+[28.137][mmc]: send stop
+[28.139][mmc]:  Write tuning pattern failded
+
+[28.143][mmc]: Write pattern failed
+[28.146][mmc]: mmc init product failed
+MMC init failed
+try emmc fail
+[28.153]sunxi-spinand: AW SPINand MTD Layer Version: 1.8 20220106
+[28.158]sunxi-spinand-phy: AW SPINand Phy Layer Version: 1.11 20211217
+[28.167]sunxi-spinand-phy: request spi0 gpio ok
+[28.171]sunxi-spinand-phy: request general tx dma channel ok!
+[28.176]sunxi-spinand-phy: request general rx dma channel ok!
+[28.182]sunxi-spinand-phy: set spic0 clk to 20 Mhz
+[28.186]sunxi-spinand-phy: init spic0 clk ok
+[29.190]sunxi-spinand-phy: read id failed : -110
+try nand fail
+[29.198]unrecognized JEDEC id bytes: ff, ff, ff
+data abort
+pc : [<5ff0b602>]	   lr : [<5ff0b5e9>]
+reloc pc : [<4303b602>]	   lr : [<4303b5e9>]
+sp : 5de6dc38  ip : 0000000c	 fp : 43000508
+r10: 43031ca1  r9 : 5deafe70	 r8 : 5deff8a8
+r7 : 5ff7f2e8  r6 : ffffffed	 r5 : 5ff4fbe0  r4 : 5deff8f0
+r3 : 00002000  r2 : 00000001	 r1 : 0000000a  r0 : 00000030
+Flags: nZCv  IRQs on  FIQs off  Mode SVC_32
