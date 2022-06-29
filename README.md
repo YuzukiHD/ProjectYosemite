@@ -2,7 +2,7 @@
 
 **Not fully verified yet. WIP**
 
-Small Heterogeneous & AI Powered Computer Core
+Small Heterogeneous & AI Powered Computing Core
 
 ![Main](Bitmap/Main.jpg)
 
