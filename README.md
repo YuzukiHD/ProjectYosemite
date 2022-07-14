@@ -16,6 +16,24 @@ Small Heterogeneous & AI Powered Computing Core
 * Built-in XR829 Wi-Fi BT 
 * Raspberry Pi A Size and Pinouts
 
+## Verify Status
+
+Verified: 
+
+* SPI
+* IIC
+* NPU
+* WiFi
+* BT
+* PMU
+* TF Card
+* UART to USB
+
+WIP:
+* MIPI DSI
+* MIPI CSI
+
+
 ## About Allwinner V853
 
 V853 is a new generation of high-performance and low-power processor SoC targeted for the field of intelligent vision. It can be widely used in intellectually upgraded industries such as intelligent door lock, intelligent attendance and access control, webcam, tachograph, and intelligent desk lamp.
