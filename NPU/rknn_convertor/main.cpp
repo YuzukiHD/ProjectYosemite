@@ -4,8 +4,8 @@
 
 int main(int c, char *v[]){
 	
-	if(c < 2)
-		return -1;
+    if(c < 2)
+        return -1;
 
     size_t size = 0;
 
