@@ -1,10 +1,8 @@
 # Project Yosemite
 
-**Not fully verified yet. WIP**
-
 Small Heterogeneous & AI Powered Computing Core
 
-![Main](Bitmap/Main.jpg)
+![image](https://user-images.githubusercontent.com/12003087/200161507-541f76ab-49f2-487f-94b3-223cc658bd1f.png)
 
 * V853 ARM A7 + RISC-V E907 + 1T NPU 
 * UP to 1GiB DDR3 and 128GiB EMMC 
@@ -16,10 +14,7 @@ Small Heterogeneous & AI Powered Computing Core
 * Built-in XR829 Wi-Fi BT 
 * Raspberry Pi A Size and Pinouts
 
-## Verify Status
-
 Verified: 
-
 * SPI
 * IIC
 * NPU
@@ -28,11 +23,8 @@ Verified:
 * PMU
 * TF Card
 * UART to USB
-
-WIP:
 * MIPI DSI
 * MIPI CSI
-
 
 ## About Allwinner V853
 
