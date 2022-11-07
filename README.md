@@ -20,7 +20,6 @@ Verified:
 * NPU
 * WiFi
 * BT
-* PMU
 * TF Card
 * UART to USB
 * MIPI DSI
